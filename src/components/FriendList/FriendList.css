@@ -1,0 +1,9 @@
+.containerFriendsList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 30px 0px;
+}

@@ -1,0 +1,41 @@
+.friendCard {
+    width: 100px;
+    border: 2px solid #1b1919;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.friendCard:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+.friendImage {
+    width: 60px;
+    height: 60px;
+    margin: 10px 0;
+}
+
+.friendName {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.friendStatus {
+    font-size: 14px;
+    color: #7d7d7d;
+    margin: 5px 0;
+}
+
+.friendStatus.online {
+    color: green;
+}
+
+.friendStatus.offline {
+    color: red;
+}

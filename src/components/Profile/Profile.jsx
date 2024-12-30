@@ -1,27 +1,28 @@
 import PropTypes from "prop-types";
+import "./Profile.css";
 
 const Profile = ({ name, tag, location, image, stats }) => {
   return (
-    <div>
+    <div className="containerProfile profileCard">
       <div>
-        <img src={image} alt={`${name} avatar`} />
-        <p>{name}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
+        <img src={image} alt={`${name} avatar`} className="profileAvatar"/>
+        <p className="profileName">{name}</p>
+        <p className="personalInfo">@{tag}</p>
+        <p className="personalInfo">{location}</p>
       </div>
 
-      <ul>
-        <li>
-          <span>Followers:</span>
-          <span>{stats.followers}</span>
+      <ul className="statisticsList">
+        <li className="statisticItem">
+          <span className="statisticName">Followers:</span>
+          <span className="statisticValue">{stats.followers}</span>
         </li>
-        <li>
-          <span>Views:</span>
-          <span>{stats.views}</span>
+        <li className="statisticItem">
+          <span className="statisticName">Views:</span>
+          <span className="statisticValue">{stats.views}</span>
         </li>
-        <li>
-          <span>Likes:</span>
-          <span>{stats.likes}</span>
+        <li className="statisticItem">
+          <span className="statisticName">Likes:</span>
+          <span className="statisticValue">{stats.likes}</span>
         </li>
       </ul>
     </div>
